@@ -174,9 +174,9 @@
                 type:'get',
                 url:' https://autumnfish.cn/big/admin/getuser',
                 success:function(backData){
-                    // console.log(backData);   
+                    console.log(backData);   
                     // 渲染左边
-                    $('.user_info>span>b').text(backData.data.nickname);
+                  $('.user_info>span>b').text(backData.data.nickname);
                     $('.user_info>img').attr('src',backData.data.user_pic);
                     // 渲染右边
                     $('.user_center_link>img').attr('src',backData.data.user_pic);
